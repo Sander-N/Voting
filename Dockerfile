@@ -9,4 +9,6 @@ FROM openjdk:8-jre-alpine
 #Copy application jar to the image
 COPY /build/libs/voting-0.0.1-SNAPSHOT.jar .
 
+EXPOSE 8080
+
 ENTRYPOINT java -jar voting-0.0.1-SNAPSHOT.jar
